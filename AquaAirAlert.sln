@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquaAirAlert.Api", "AquaAirAlert.Api\AquaAirAlert.Api.csproj", "{2EA76DEA-0AEB-46A5-BCAC-32DBABFDFF1F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquaAirAlert.Communication", "AquaAirAlert.Communication\AquaAirAlert.Communication.csproj", "{F250CFA2-BC24-4D95-BA05-E83CB554B950}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquaAirAlert.Infrastructure", "AquaAirAlert.Infrastructure\AquaAirAlert.Infrastructure.csproj", "{4A1ACD59-152F-4DB0-A37E-C28D4F608323}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquaAirAlert.Application", "AquaAirAlert.Application\AquaAirAlert.Application.csproj", "{495CB898-C3D7-4F08-894D-C6935E43DAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AquaAirAlert.Exception", "AquaAirAlert.Exception\AquaAirAlert.Exception.csproj", "{60BD81C7-5A39-4FC3-B4F7-4CD9D0288B92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2EA76DEA-0AEB-46A5-BCAC-32DBABFDFF1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA76DEA-0AEB-46A5-BCAC-32DBABFDFF1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA76DEA-0AEB-46A5-BCAC-32DBABFDFF1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA76DEA-0AEB-46A5-BCAC-32DBABFDFF1F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F250CFA2-BC24-4D95-BA05-E83CB554B950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F250CFA2-BC24-4D95-BA05-E83CB554B950}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F250CFA2-BC24-4D95-BA05-E83CB554B950}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F250CFA2-BC24-4D95-BA05-E83CB554B950}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A1ACD59-152F-4DB0-A37E-C28D4F608323}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A1ACD59-152F-4DB0-A37E-C28D4F608323}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A1ACD59-152F-4DB0-A37E-C28D4F608323}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A1ACD59-152F-4DB0-A37E-C28D4F608323}.Release|Any CPU.Build.0 = Release|Any CPU
+		{495CB898-C3D7-4F08-894D-C6935E43DAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{495CB898-C3D7-4F08-894D-C6935E43DAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{495CB898-C3D7-4F08-894D-C6935E43DAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{495CB898-C3D7-4F08-894D-C6935E43DAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{60BD81C7-5A39-4FC3-B4F7-4CD9D0288B92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{60BD81C7-5A39-4FC3-B4F7-4CD9D0288B92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{60BD81C7-5A39-4FC3-B4F7-4CD9D0288B92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{60BD81C7-5A39-4FC3-B4F7-4CD9D0288B92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

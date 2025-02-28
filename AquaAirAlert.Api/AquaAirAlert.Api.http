@@ -1,0 +1,6 @@
+@AquaAirAlert.Api_HostAddress = http://localhost:5088
+
+GET {{AquaAirAlert.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

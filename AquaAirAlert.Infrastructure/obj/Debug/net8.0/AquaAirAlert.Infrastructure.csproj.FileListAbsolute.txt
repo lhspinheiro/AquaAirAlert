@@ -1,0 +1,12 @@
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Infrastructure.deps.json
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Infrastructure.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.csproj.AssemblyReference.cache
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.AssemblyInfoInputs.cache
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.AssemblyInfo.cs
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.csproj.CoreCompileInputs.cache
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/refint/AquaAirAlert.Infrastructure.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/ref/AquaAirAlert.Infrastructure.dll

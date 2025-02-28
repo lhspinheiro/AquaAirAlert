@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "h37rl7CdHTOudO6qectjNEjxFH5r0WVZYFWQX6o5x4o=",
+  "Source": "AquaAirAlert.Api",
+  "BasePath": "_content/AquaAirAlert.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
