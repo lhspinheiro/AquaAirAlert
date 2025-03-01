@@ -13,7 +13,6 @@ public class RegisterAlertsUSeCase
         
         await Validate(request);
         
-
         var entity = new alert()
         {
             Localizacao = request.Localizacao,

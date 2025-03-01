@@ -506,6 +506,9 @@
         }
       },
       "AquaAirAlert.Communication/1.0.0": {
+        "dependencies": {
+          "AquaAirAlert.Infrastructure": "1.0.0"
+        },
         "runtime": {
           "AquaAirAlert.Communication.dll": {}
         }

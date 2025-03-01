@@ -1,4 +1,4 @@
-using AquaAirAlert.Application.UseCase.InterfacesRefit;
+using AquaAirAlert.Application.UseCase.WeatherRefit;
 using AquaAirAlert.Communication.Response;
 using Microsoft.AspNetCore.Mvc;
 

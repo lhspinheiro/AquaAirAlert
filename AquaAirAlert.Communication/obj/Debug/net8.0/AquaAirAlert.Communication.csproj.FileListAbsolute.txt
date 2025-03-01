@@ -10,3 +10,7 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.pdb
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/ref/AquaAirAlert.Communication.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.sourcelink.json
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Infrastructure.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.AssemblyReference.cache
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.CopyComplete

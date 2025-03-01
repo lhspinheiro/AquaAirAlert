@@ -1,3 +1,4 @@
+using AquaAirAlert.Application.UseCase.GetAllAlerts;
 using AquaAirAlert.Application.UseCase.RegisterAlerts;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
@@ -21,6 +22,22 @@ namespace AquaAirAlert.Api.Controllers
             var response = await useCase.Execute(request);
             
             return Created(string.Empty, response);
+        }
+
+        [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        public async Task<IActionResult> GetAll()
+        {
+            var useCase = new GetAllAlertsUseCase();
+            
+            var response = await useCase.Execute();
+            
+            if (response != null)
+                return Ok(response);
+            
+            return NoContent();
+
         }
     }
 }

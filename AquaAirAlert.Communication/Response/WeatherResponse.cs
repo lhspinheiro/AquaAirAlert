@@ -4,24 +4,11 @@ namespace AquaAirAlert.Communication.Response;
 
 public class WeatherResponse
 {
-    
-    [JsonPropertyName("weather")]
-    public List<Weather> weather { get; set; }
-    
     [JsonPropertyName("main")]
     public  Main? main { get; set; }
     
-    
-    
-    
-    public class Weather
-    {
-        [JsonPropertyName("main")]
-        public string? main { get; set; }
-        
-        [JsonPropertyName("description")]
-        public string? description { get; set; }
-    }
+    [JsonPropertyName("weather")]
+    public List<Weather> weather { get; set; }
     
     public class Main 
     {
@@ -38,4 +25,18 @@ public class WeatherResponse
         public int? pressure { get; set; }
     }
     
+    public class Weather
+    {
+        [JsonPropertyName("main")]
+        public string? main { get; set; }
+        
+        [JsonPropertyName("description")]
+        public string? description { get; set; }
+        
+       
+    }
+    
+    [JsonPropertyName("name")]
+        
+    public string? name { get; set; }
 }

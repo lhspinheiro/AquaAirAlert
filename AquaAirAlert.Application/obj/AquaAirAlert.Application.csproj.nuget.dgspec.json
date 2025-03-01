@@ -102,7 +102,11 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
+                "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

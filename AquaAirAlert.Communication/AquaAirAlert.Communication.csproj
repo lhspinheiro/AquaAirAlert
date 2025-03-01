@@ -6,4 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AquaAirAlert.Infrastructure\AquaAirAlert.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

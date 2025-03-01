@@ -1,6 +1,6 @@
 using AquaAirAlert.Communication.Response;
 
-namespace AquaAirAlert.Application.UseCase.InterfacesRefit;
+namespace AquaAirAlert.Application.UseCase.WeatherRefit;
 
 public interface IWeatherIntegration
 {
