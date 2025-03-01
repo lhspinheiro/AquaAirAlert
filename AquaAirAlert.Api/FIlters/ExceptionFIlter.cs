@@ -9,7 +9,7 @@ public class ExceptionFIlter : IExceptionFilter
 {
     public void OnException(ExceptionContext context)
     {
-     /*   if (context.Exception is AlertsException alertsException)
+        if (context.Exception is AlertsException alertsException)
         {
             context.HttpContext.Response.StatusCode = (int)alertsException.GetStatusCode();
             context.Result = new ObjectResult(new ResponseErrorMessagesJson
@@ -25,6 +25,6 @@ public class ExceptionFIlter : IExceptionFilter
             {
                 Errors = ["Unknown error"]
             });
-        } */
+        } 
     }
 }
