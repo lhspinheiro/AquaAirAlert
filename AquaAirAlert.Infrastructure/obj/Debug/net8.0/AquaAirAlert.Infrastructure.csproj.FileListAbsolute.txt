@@ -10,3 +10,4 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/refint/AquaAirAlert.Infrastructure.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/ref/AquaAirAlert.Infrastructure.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.sourcelink.json

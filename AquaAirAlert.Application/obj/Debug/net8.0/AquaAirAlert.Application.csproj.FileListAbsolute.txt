@@ -17,3 +17,4 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/obj/Debug/net8.0/ref/AquaAirAlert.Application.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/bin/Debug/net8.0/AquaAirAlert.Exception.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/bin/Debug/net8.0/AquaAirAlert.Exception.pdb
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/obj/Debug/net8.0/AquaAirAlert.Application.sourcelink.json

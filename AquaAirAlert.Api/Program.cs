@@ -1,5 +1,8 @@
 using AquaAirAlert.Api.FIlters;
+using AquaAirAlert.Application.UseCase;
+using AquaAirAlert.Application.UseCase.InterfacesRefit;
 using AquaAirAlert.Infrastructure.Data;
+using Refit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +13,13 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<AppDbContext>();
+builder.Services.AddScoped<IWeatherIntegration, WeatherIntegration>();
+
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFIlter)));
+builder.Services.AddRefitClient<IWeatherIntegrationRefit>().ConfigureHttpClient(client =>
+{
+    client.BaseAddress = new Uri("https://api.openweathermap.org");
+});
 
 var app = builder.Build();
 

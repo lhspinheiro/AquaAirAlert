@@ -292,3 +292,9 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/FluentValidation.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/AquaAirAlert.Exception.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/AquaAirAlert.Exception.pdb
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Refit.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Refit.HttpClientFactory.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/obj/Debug/net8.0/AquaAirAlert.Api.sourcelink.json

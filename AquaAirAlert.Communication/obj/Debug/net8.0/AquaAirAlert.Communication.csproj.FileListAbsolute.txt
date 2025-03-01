@@ -9,3 +9,4 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/refint/AquaAirAlert.Communication.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.pdb
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/ref/AquaAirAlert.Communication.dll
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.sourcelink.json
