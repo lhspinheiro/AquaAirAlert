@@ -2,6 +2,7 @@ using AquaAirAlert.Application.UseCase.GetAllAlerts;
 using AquaAirAlert.Application.UseCase.RegisterAlerts;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
+using AquaAirAlert.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AquaAirAlert.Api.Controllers
@@ -10,7 +11,7 @@ namespace AquaAirAlert.Api.Controllers
     [ApiController]
     public class AlertController : ControllerBase
     {
-
+        
         [HttpPost]
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
@@ -29,7 +30,9 @@ namespace AquaAirAlert.Api.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task<IActionResult> GetAll()
         {
-            var useCase = new GetAllAlertsUseCase();
+            var dbContext = new AppDbContext();
+            
+            var useCase = new GetAllAlertsUseCase(dbContext);
             
             var response = await useCase.Execute();
             

@@ -1,3 +1,4 @@
+using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,13 +7,21 @@ namespace AquaAirAlert.Application.UseCase.GetAllAlerts;
 public class GetAllAlertsUseCase
 {
 
-    
-    public  async Task <List<alert>> Execute()
-    {
-        
-        var dbContext = new AppDbContext();
+    private readonly AppDbContext  _dbContext;
 
-         var response = await dbContext.Alerts.AsNoTracking().ToListAsync(); 
+    public GetAllAlertsUseCase(AppDbContext  dbContext)
+    {
+        _dbContext = dbContext;
+    }
+    
+    public async Task <List<ResponseAlert>> Execute()
+    {
+         var response = await _dbContext.Alerts.AsNoTracking().Select(r => new ResponseAlert
+         {
+             Localizacao = r.Localizacao,
+             Data=r.Data,
+             Descricao = r.Descricao,
+         }).ToListAsync(); 
         
         return response; 
         
