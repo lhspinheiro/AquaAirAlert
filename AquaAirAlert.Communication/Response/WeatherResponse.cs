@@ -10,10 +10,19 @@ public class WeatherResponse
     [JsonPropertyName("weather")]
     public List<Weather> weather { get; set; }
     
+    [JsonPropertyName("wind")]
+    public Wind? wind { get; set; }
+    
+    [JsonPropertyName("sys")]
+    public Sys? sys { get; set; }
+    
     public class Main 
     {
         [JsonPropertyName("temp")]
         public double? temp { get; set; }
+        
+        [JsonPropertyName("feels_like")]
+        public double? feels_like { get; set; }
         
         [JsonPropertyName("temp_min")]
         public double? temp_min { get; set; }
@@ -33,10 +42,22 @@ public class WeatherResponse
         [JsonPropertyName("description")]
         public string? description { get; set; }
         
-       
+    }
+    
+    public class Wind
+    {
+        [JsonPropertyName("speed")]
+        public double? speed { get; set; }
+    }
+
+    public class Sys
+    {
+        [JsonPropertyName("country")]
+        public string? country { get; set; }
+        
     }
     
     [JsonPropertyName("name")]
-        
     public string? name { get; set; }
+    
 }

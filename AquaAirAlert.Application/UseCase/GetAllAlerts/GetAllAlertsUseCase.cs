@@ -16,7 +16,7 @@ public class GetAllAlertsUseCase
     
     public async Task <List<ResponseAlert>> Execute()
     {
-         var response = await _dbContext.Alerts.AsNoTracking().Select(r => new ResponseAlert
+         var response = await _dbContext.Alerts.AsNoTracking().OrderByDescending(order => order.Data).Select(r => new ResponseAlert
          {
              Localizacao = r.Localizacao,
              Data=r.Data,
@@ -24,6 +24,5 @@ public class GetAllAlertsUseCase
          }).ToListAsync(); 
         
         return response; 
-        
     }
 }
