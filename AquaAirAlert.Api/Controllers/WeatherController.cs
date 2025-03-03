@@ -27,5 +27,19 @@ namespace AquaAirAlert.Api.Controllers
            return Ok(result);
         }
 
+        [HttpGet]
+        [Route("{lat}/{lon}")]
+
+        public async Task<ActionResult<ResponseAirPolluition>> getAirPollution([FromRoute] float lat,
+            [FromRoute] float lon)
+        {
+            var result = await _weatherIntegration.GetAirPolluition(lat, lon);
+            
+            if  (result is null)
+                return NotFound("Location not found");
+            
+            return Ok(result);
+        }
+        
     }
 }

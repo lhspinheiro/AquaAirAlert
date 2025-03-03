@@ -25,5 +25,15 @@ public class WeatherIntegration : IWeatherIntegration
         }  
         return null; 
     }
-    
+
+    public async Task<ResponseAirPolluition> GetAirPolluition(float lat, float lon)
+    {
+        var responseApi = await _weatherIntegrationRefit.GetAirPollution(lat, lon);
+
+        if (responseApi != null && responseApi.IsSuccessStatusCode)
+        {
+            return responseApi.Content;
+        }
+        return null;
+    }
 }
