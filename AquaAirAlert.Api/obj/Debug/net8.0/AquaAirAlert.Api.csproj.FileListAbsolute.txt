@@ -298,3 +298,4 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Refit.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Refit.HttpClientFactory.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/obj/Debug/net8.0/AquaAirAlert.Api.sourcelink.json
+/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/BCrypt.Net-Next.dll

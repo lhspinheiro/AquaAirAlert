@@ -22,7 +22,7 @@ public class GetAllAlertsUseCase
              Data=r.Data,
              Descricao = r.Descricao,
          }).ToListAsync(); 
-        
+         
         return response; 
     }
 }

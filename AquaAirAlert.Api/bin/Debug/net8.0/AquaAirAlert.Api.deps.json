@@ -20,6 +20,14 @@
           "AquaAirAlert.Api.dll": {}
         }
       },
+      "BCrypt.Net-Next/4.0.3": {
+        "runtime": {
+          "lib/net6.0/BCrypt.Net-Next.dll": {
+            "assemblyVersion": "4.0.3.0",
+            "fileVersion": "4.0.3.0"
+          }
+        }
+      },
       "FluentValidation/12.0.0-preview1": {
         "runtime": {
           "lib/net8.0/FluentValidation.dll": {
@@ -2065,6 +2073,7 @@
           "AquaAirAlert.Communication": "1.0.0",
           "AquaAirAlert.Exception": "1.0.0",
           "AquaAirAlert.Infrastructure": "1.0.0",
+          "BCrypt.Net-Next": "4.0.3",
           "FluentValidation": "12.0.0-preview1",
           "Refit": "8.0.0",
           "Refit.HttpClientFactory": "8.0.0"
@@ -2102,6 +2111,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "BCrypt.Net-Next/4.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-W+U9WvmZQgi5cX6FS5GDtDoPzUCV4LkBLkywq/kRZhuDwcbavOzcDAr3LXJFqHUi952Yj3LEYoWW0jbEUQChsA==",
+      "path": "bcrypt.net-next/4.0.3",
+      "hashPath": "bcrypt.net-next.4.0.3.nupkg.sha512"
     },
     "FluentValidation/12.0.0-preview1": {
       "type": "package",
