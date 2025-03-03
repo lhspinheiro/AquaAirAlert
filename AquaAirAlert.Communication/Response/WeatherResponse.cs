@@ -4,6 +4,10 @@ namespace AquaAirAlert.Communication.Response;
 
 public class WeatherResponse
 {
+    
+    [JsonPropertyName("coord")]
+    public Coord? coord { get; set; }
+    
     [JsonPropertyName("main")]
     public  Main? main { get; set; }
     
@@ -15,6 +19,19 @@ public class WeatherResponse
     
     [JsonPropertyName("sys")]
     public Sys? sys { get; set; }
+
+    
+    
+    public class Coord
+    {
+        [JsonPropertyName("lon")]
+        public float? lon { get; set; }
+        
+        [JsonPropertyName("lat")]
+        public float? lat { get; set; }
+    }
+    
+    
     
     public class Main 
     {
