@@ -32,7 +32,12 @@ public class WeatherIntegration : IWeatherIntegration
 
         if (responseApi != null && responseApi.IsSuccessStatusCode)
         {
-            return responseApi.Content;
+            var responseContent = responseApi.Content;
+
+            
+            responseContent.SetDescriptionForAqi();
+
+            return responseContent;
         }
         return null;
     }

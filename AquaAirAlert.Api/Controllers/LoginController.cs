@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AquaAirAlert.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class LoginController : ControllerBase
     {
