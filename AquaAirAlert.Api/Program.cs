@@ -1,6 +1,7 @@
 using AquaAirAlert.Api.FIlters;
 using AquaAirAlert.Application.UseCase.InterfacesRefit;
 using AquaAirAlert.Application.UseCase.WeatherRefit;
+using AquaAirAlert.Communication.KeyModel;
 using AquaAirAlert.Infrastructure;
 using AquaAirAlert.Infrastructure.Data;
 using Refit;
@@ -23,6 +24,8 @@ builder.Services.AddRefitClient<IWeatherIntegrationRefit>().ConfigureHttpClient(
 {
     client.BaseAddress = new Uri("https://api.openweathermap.org");
 });
+
+builder.Services.Configure<ApiKey>(builder.Configuration.GetSection("ApiKey"));
 
 var app = builder.Build();
 
