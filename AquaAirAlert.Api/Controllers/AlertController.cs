@@ -1,9 +1,13 @@
+using System.Net;
+using AquaAirAlert.Application.UseCase.Delete;
 using AquaAirAlert.Application.UseCase.GetAllAlerts;
 using AquaAirAlert.Application.UseCase.RegisterAlerts;
+using AquaAirAlert.Application.UseCase.UpdateAlerts;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Infrastructure.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Api.Controllers
 {
@@ -11,6 +15,14 @@ namespace AquaAirAlert.Api.Controllers
     [ApiController]
     public class AlertController : ControllerBase
     {
+
+        private readonly DeleteAlertUseCase _useCase;
+
+        public AlertController(DeleteAlertUseCase  useCase)
+        {
+            _useCase = useCase;
+        }
+        
         
         [HttpPost]
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status201Created)]
@@ -41,6 +53,37 @@ namespace AquaAirAlert.Api.Controllers
             
             return NoContent();
 
+        }
+
+
+        [HttpPut]
+        [Route("{id}")]
+        [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> Update([FromRoute] long id, [FromBody]AlertRequest request )
+        {
+            var useCase = new UpdateRequestUseCase();
+            
+            var result = await useCase.Execute(id, request);
+            
+            if (result == null)
+                return NotFound();
+            
+            return Ok(result);
+        }
+
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<IActionResult> Delete([FromRoute] long id)
+        {
+            var result = await _useCase.Delete(id);
+    
+            if  (result)
+                return Ok();
+            
+            return NotFound();
         }
     }
 }

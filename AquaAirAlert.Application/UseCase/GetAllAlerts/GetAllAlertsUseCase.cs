@@ -18,6 +18,7 @@ public class GetAllAlertsUseCase
     {
          var response = await _dbContext.Alerts.AsNoTracking().OrderByDescending(order => order.Data).Select(r => new ResponseAlert
          {
+             Id = r.Id,
              Localizacao = r.Localizacao,
              Data=r.Data,
              Descricao = r.Descricao,

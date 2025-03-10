@@ -1,36 +1,45 @@
+using System.Net;
+using AquaAirAlert.Application.UseCase.RegisterAlerts;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
-namespace AquaAirAlert.Application.UseCase.RegisterAlerts;
+namespace AquaAirAlert.Application.UseCase.UpdateAlerts;
 
-public class RegisterAlertsUSeCase
+public class UpdateRequestUseCase
 {
-    public async Task<ResponseAlert> Execute(AlertRequest request)
+    
+    public async Task<ResponseAlert> Execute(long id, AlertRequest request)
     {
-        var dbContext = new AppDbContext();
+        var dbcontext = new AppDbContext();
         
         await Validate(request);
         
-        var entity = new alert()
+        var entity = await dbcontext.Alerts.AsNoTracking().SingleOrDefaultAsync(i => i.Id.Equals(id));
+        
+        if (entity == null)
         {
-            Localizacao = request.Localizacao,
-            Data = request.Data,
-            Descricao = request.Descricao,
-        };
+            return null;
+        }
         
-        await dbContext.Alerts.AddAsync(entity);
-        await dbContext.SaveChangesAsync();
+        entity.Localizacao = request.Localizacao;
+        entity.Data = request.Data;
+        entity.Descricao = request.Descricao;
         
+        dbcontext.Alerts.Update(entity);
+        await dbcontext.SaveChangesAsync();
+
         return new ResponseAlert
-        {   
+        {
             Id = entity.Id,
             Localizacao = entity.Localizacao,
             Data = entity.Data,
-            Descricao = entity.Descricao,
+            Descricao = entity.Descricao
         };
     }
+    
     
     private async Task Validate(AlertRequest request)
     {
@@ -45,4 +54,5 @@ public class RegisterAlertsUSeCase
             throw new ErrorOnValidationException(errorMessages);
         }
     }
+    
 }

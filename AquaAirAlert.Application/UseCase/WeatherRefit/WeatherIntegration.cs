@@ -36,6 +36,7 @@ public class WeatherIntegration : IWeatherIntegration
         
         string api_key = _apiKey.key;
         
+        
         var responseApi = await _weatherIntegrationRefit.GetAirPollution(lat, lon, api_key);
 
         if (responseApi != null && responseApi.IsSuccessStatusCode)

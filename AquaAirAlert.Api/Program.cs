@@ -1,4 +1,5 @@
 using AquaAirAlert.Api.FIlters;
+using AquaAirAlert.Application.UseCase.Delete;
 using AquaAirAlert.Application.UseCase.InterfacesRefit;
 using AquaAirAlert.Application.UseCase.WeatherRefit;
 using AquaAirAlert.Communication.KeyModel;
@@ -16,9 +17,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<IWeatherIntegration, WeatherIntegration>();
+builder.Services.AddScoped<DeleteAlertUseCase>();
 
 
-builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFIlter)));
+
 
 builder.Services.AddRefitClient<IWeatherIntegrationRefit>().ConfigureHttpClient(client =>
 {
@@ -26,6 +28,7 @@ builder.Services.AddRefitClient<IWeatherIntegrationRefit>().ConfigureHttpClient(
 });
 
 builder.Services.Configure<ApiKey>(builder.Configuration.GetSection("ApiKey"));
+
 
 var app = builder.Build();
 

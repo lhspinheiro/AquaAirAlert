@@ -6,8 +6,6 @@ namespace AquaAirAlert.Application.UseCase.InterfacesRefit;
 
 public interface IWeatherIntegrationRefit
 {
-   
-    
     [Get("/data/2.5/weather?q={city}&appid={api_key}&lang=pt_br&units=metric")]
     Task <ApiResponse<WeatherResponse>> GetWeather  (string city, string api_key);
     

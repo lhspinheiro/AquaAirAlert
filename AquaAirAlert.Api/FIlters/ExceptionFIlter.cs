@@ -7,24 +7,25 @@ namespace AquaAirAlert.Api.FIlters;
 
 public class ExceptionFIlter : IExceptionFilter
 {
-    public void OnException(ExceptionContext context)
-    {
-        if (context.Exception is AlertsException alertsException)
-        {
-            context.HttpContext.Response.StatusCode = (int)alertsException.GetStatusCode();
-            context.Result = new ObjectResult(new ResponseErrorMessagesJson
-            {
-                Errors = alertsException.GetErrorMessages()
-            });
-        }
 
-        else
-        {
-            context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
-            context.Result = new ObjectResult(new ResponseErrorMessagesJson
-            {
-                Errors = ["Unknown error"]
-            });
-        } 
-    }
-}
+     public void OnException(ExceptionContext context)
+     {
+         if (context.Exception is AlertsException alertsException)
+         {
+             context.HttpContext.Response.StatusCode = (int)alertsException.GetStatusCode();
+             context.Result = new ObjectResult(new ResponseErrorMessagesJson
+             {
+                 Errors = alertsException.GetErrorMessages()
+             }); 
+         }
+
+         else
+         {
+             context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
+             context.Result = new ObjectResult(new ResponseErrorMessagesJson
+             {
+                 Errors = ["Unknown error"]
+             });
+         }
+     } 
+} 
