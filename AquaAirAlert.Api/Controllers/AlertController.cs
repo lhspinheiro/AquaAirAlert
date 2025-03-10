@@ -15,14 +15,6 @@ namespace AquaAirAlert.Api.Controllers
     [ApiController]
     public class AlertController : ControllerBase
     {
-
-        private readonly DeleteAlertUseCase _useCase;
-
-        public AlertController(DeleteAlertUseCase  useCase)
-        {
-            _useCase = useCase;
-        }
-        
         
         [HttpPost]
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status201Created)]
@@ -54,8 +46,7 @@ namespace AquaAirAlert.Api.Controllers
             return NoContent();
 
         }
-
-
+        
         [HttpPut]
         [Route("{id}")]
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status200OK)]
@@ -72,13 +63,14 @@ namespace AquaAirAlert.Api.Controllers
             
             return Ok(result);
         }
-
-
+        
         [HttpDelete]
         [Route("{id}")]
         public async Task<IActionResult> Delete([FromRoute] long id)
         {
-            var result = await _useCase.Delete(id);
+            var useCase = new DeleteAlertUseCase();
+            
+            var result = await useCase.Delete(id);
     
             if  (result)
                 return Ok();
