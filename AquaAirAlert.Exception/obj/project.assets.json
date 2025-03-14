@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
+      "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
       "projectName": "AquaAirAlert.Exception",
-      "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
+      "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
       "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-      "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/obj/",
+      "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"

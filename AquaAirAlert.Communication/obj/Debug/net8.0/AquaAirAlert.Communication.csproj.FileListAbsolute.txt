@@ -14,3 +14,19 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.AssemblyReference.cache
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.CopyComplete
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Communication.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Communication.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.AssemblyReference.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.csproj.CopyComplete
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/refint/AquaAirAlert.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/ref/AquaAirAlert.Communication.dll

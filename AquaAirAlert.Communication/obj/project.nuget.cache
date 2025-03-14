@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bTxUOoz50Tk=",
+  "dgSpecHash": "bg6eOMqghD4=",
   "success": true,
-  "projectFilePath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
+  "projectFilePath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
   "expectedPackageFiles": [
     "/home/lhspinheiro/.nuget/packages/microsoft.data.sqlite.core/9.0.2/microsoft.data.sqlite.core.9.0.2.nupkg.sha512",
     "/home/lhspinheiro/.nuget/packages/microsoft.entityframeworkcore/9.0.2/microsoft.entityframeworkcore.9.0.2.nupkg.sha512",

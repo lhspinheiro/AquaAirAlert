@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SLO7VLejqqg=",
+  "dgSpecHash": "Hwg4EaXNd+o=",
   "success": true,
-  "projectFilePath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/AquaAirAlert.Api.csproj",
+  "projectFilePath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/AquaAirAlert.Api.csproj",
   "expectedPackageFiles": [
     "/home/lhspinheiro/.nuget/packages/bcrypt.net-next/4.0.3/bcrypt.net-next.4.0.3.nupkg.sha512",
     "/home/lhspinheiro/.nuget/packages/fluentvalidation/12.0.0-preview1/fluentvalidation.12.0.0-preview1.nupkg.sha512",

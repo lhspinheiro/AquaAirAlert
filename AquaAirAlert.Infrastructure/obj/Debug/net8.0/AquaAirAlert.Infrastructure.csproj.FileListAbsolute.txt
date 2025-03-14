@@ -11,3 +11,16 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/ref/AquaAirAlert.Infrastructure.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Infrastructure.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.csproj.AssemblyReference.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/refint/AquaAirAlert.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/ref/AquaAirAlert.Infrastructure.dll

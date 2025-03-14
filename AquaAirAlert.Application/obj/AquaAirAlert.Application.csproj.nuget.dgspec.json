@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj": {}
+    "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj": {}
   },
   "projects": {
-    "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj": {
+    "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj",
+        "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj",
         "projectName": "AquaAirAlert.Application",
-        "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj",
+        "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj",
         "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-        "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/obj/",
+        "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"
@@ -26,14 +26,14 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj": {
-                "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj"
+              "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj": {
+                "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj"
               },
-              "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj": {
-                "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj"
+              "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj": {
+                "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj"
               },
-              "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
-                "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
+              "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
+                "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
               }
             }
           }
@@ -85,14 +85,14 @@
         }
       }
     },
-    "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj": {
+    "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
+        "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
         "projectName": "AquaAirAlert.Communication",
-        "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
+        "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
         "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-        "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/obj/",
+        "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"
@@ -107,8 +107,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
-                "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
+              "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
+                "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
               }
             }
           }
@@ -142,14 +142,14 @@
         }
       }
     },
-    "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj": {
+    "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
+        "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
         "projectName": "AquaAirAlert.Exception",
-        "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
+        "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj",
         "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-        "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/obj/",
+        "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"
@@ -195,14 +195,14 @@
         }
       }
     },
-    "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
+    "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
+        "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
         "projectName": "AquaAirAlert.Infrastructure",
-        "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
+        "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
         "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-        "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/",
+        "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"

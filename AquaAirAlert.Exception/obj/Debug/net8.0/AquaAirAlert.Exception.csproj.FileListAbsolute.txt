@@ -10,3 +10,15 @@
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.pdb
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/ref/AquaAirAlert.Exception.dll
 /home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/bin/Debug/net8.0/AquaAirAlert.Exception.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/bin/Debug/net8.0/AquaAirAlert.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/bin/Debug/net8.0/AquaAirAlert.Exception.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/refint/AquaAirAlert.Exception.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/AquaAirAlert.Exception.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/obj/Debug/net8.0/ref/AquaAirAlert.Exception.dll

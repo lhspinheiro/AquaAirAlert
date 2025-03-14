@@ -1281,11 +1281,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
+      "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
       "projectName": "AquaAirAlert.Infrastructure",
-      "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
+      "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj",
       "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-      "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/",
+      "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"

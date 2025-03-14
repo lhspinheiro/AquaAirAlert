@@ -7707,11 +7707,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/AquaAirAlert.Api.csproj",
+      "projectUniqueName": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/AquaAirAlert.Api.csproj",
       "projectName": "AquaAirAlert.Api",
-      "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/AquaAirAlert.Api.csproj",
+      "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/AquaAirAlert.Api.csproj",
       "packagesPath": "/home/lhspinheiro/.nuget/packages/",
-      "outputPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Api/obj/",
+      "outputPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/lhspinheiro/.nuget/NuGet/NuGet.Config"
@@ -7726,17 +7726,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj": {
-              "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj"
+            "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj": {
+              "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Application/AquaAirAlert.Application.csproj"
             },
-            "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj": {
-              "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj"
+            "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj": {
+              "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/AquaAirAlert.Communication.csproj"
             },
-            "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj": {
-              "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj"
+            "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj": {
+              "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Exception/AquaAirAlert.Exception.csproj"
             },
-            "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
-              "projectPath": "/home/lhspinheiro/RiderProjects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
+            "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj": {
+              "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/AquaAirAlert.Infrastructure.csproj"
             }
           }
         }
