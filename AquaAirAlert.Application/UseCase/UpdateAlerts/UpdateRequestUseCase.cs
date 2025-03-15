@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.UpdateAlerts;
 
-public class UpdateRequestUseCase
+public class UpdateRequestUseCase : IUpdateRequestUseCase
 {
     
     public async Task<ResponseAlert> Execute(long id, AlertRequest request)
@@ -39,7 +39,6 @@ public class UpdateRequestUseCase
             Descricao = entity.Descricao
         };
     }
-    
     
     private async Task Validate(AlertRequest request)
     {

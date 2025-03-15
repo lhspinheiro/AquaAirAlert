@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.GetAllAlerts;
 
-public class GetAllAlertsUseCase
+public class GetAllAlertsUseCase : IGetAllAlertsUseCase
 {
 
     private readonly AppDbContext  _dbContext;

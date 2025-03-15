@@ -9,21 +9,12 @@ namespace AquaAirAlert.Api.Controllers
     [ApiController]
     public class AirPollutionController : ControllerBase
     {
-        
-        private readonly IWeatherIntegration _weatherIntegration;
-
-        public AirPollutionController(IWeatherIntegration  weatherIntegration)
-        {
-            _weatherIntegration = weatherIntegration;
-        }
-        
         [HttpGet]
         [Route("{lat}/{lon}")]
-
-        public async Task<ActionResult<ResponseAirPolluition>> getAirPollution([FromRoute] float lat,
-            [FromRoute] float lon)
+        public async Task<ActionResult<ResponseAirPolluition>> getAirPollution([FromServices]IWeatherIntegration weatherIntegration,
+            [FromRoute] float lat, [FromRoute] float lon)
         {
-            var result = await _weatherIntegration.GetAirPolluition(lat, lon);
+            var result = await weatherIntegration.GetAirPolluition(lat, lon);
             
             if  (result is null)
                 return NotFound("Location not found");

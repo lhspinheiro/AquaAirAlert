@@ -3,11 +3,8 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.Delete;
 
-public class DeleteAlertUseCase
+public class DeleteAlertUseCase : IDeleteAlertUseCase
 {
-    
-  
-    
     public async Task<bool> Delete(long id)
     {
         var dbcontext = new AppDbContext();

@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.Login;
 
-public class LoginUseCase
+public class LoginUseCase : ILoginUseCase
 {
     public async Task<ResponseSuccessLogin> Login(RequestLogin request)
     {

@@ -14,10 +14,8 @@ namespace AquaAirAlert.Api.Controllers
         [HttpPost]
         [ProducesResponseType(typeof(ResponseUserRegistered), statusCode: StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorMessagesJson), statusCode: StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> Register(UserRequest request)
+        public async Task<IActionResult> Register([FromServices]IRegisterUserUseCase useCase, [FromBody] UserRequest request)
         {
-            var useCase = new RegisterUserUseCase();
-
             var register = await useCase.Execute(request);
             
             return Created(string.Empty, register);

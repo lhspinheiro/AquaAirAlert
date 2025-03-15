@@ -8,25 +8,18 @@ namespace AquaAirAlert.Api.Controllers
     [ApiController]
     public class WeatherController : ControllerBase
     {
-        private readonly IWeatherIntegration _weatherIntegration;
 
-        public WeatherController(IWeatherIntegration  weatherIntegration)
-        {
-            _weatherIntegration = weatherIntegration;
-        }
-        
         [HttpGet]
         [Route("{city}")]
-        public async Task<ActionResult<WeatherResponse>> Get([FromRoute]string city)
+        public async Task<ActionResult<WeatherResponse>> Get([FromServices]IWeatherIntegration weatherIntegration  ,  [FromRoute]string city)
         {
-           var result = await _weatherIntegration.GetWeather(city);
+           var result = await weatherIntegration.GetWeather(city);
 
            if (result is null)
                return NotFound("City not found");
            
            return Ok(result);
         }
-        
         
     }
 }

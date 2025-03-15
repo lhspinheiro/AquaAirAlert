@@ -8,7 +8,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.RegisterUser;
 
-public class RegisterUserUseCase
+public class RegisterUserUseCase : IRegisterUserUseCase
 {
     public async Task<ResponseUserRegistered> Execute(UserRequest request)
     {

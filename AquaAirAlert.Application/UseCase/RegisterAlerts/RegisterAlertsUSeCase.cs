@@ -5,7 +5,7 @@ using AquaAirAlert.Infrastructure.Data;
 
 namespace AquaAirAlert.Application.UseCase.RegisterAlerts;
 
-public class RegisterAlertsUSeCase
+public class RegisterAlertsUSeCase : IRegisterAlertsUSeCase
 {
     public async Task<ResponseAlert> Execute(AlertRequest request)
     {

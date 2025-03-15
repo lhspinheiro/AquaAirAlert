@@ -20,10 +20,8 @@ namespace AquaAirAlert.Api.Controllers
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
 
-        public async Task<IActionResult> Register(AlertRequest request)
+        public async Task<IActionResult> Register([FromServices]IRegisterAlertsUSeCase useCase, [FromBody] AlertRequest request)
         {
-            var useCase = new RegisterAlertsUSeCase();
-
             var response = await useCase.Execute(request);
             
             return Created(string.Empty, response);
@@ -32,11 +30,8 @@ namespace AquaAirAlert.Api.Controllers
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromServices]IGetAllAlertsUseCase useCase)
         {
-            var dbContext = new AppDbContext();
-            
-            var useCase = new GetAllAlertsUseCase(dbContext);
             
             var response = await useCase.Execute();
             
@@ -52,10 +47,8 @@ namespace AquaAirAlert.Api.Controllers
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public async Task<IActionResult> Update([FromRoute] long id, [FromBody]AlertRequest request )
+        public async Task<IActionResult> Update([FromServices]IUpdateRequestUseCase useCase, [FromRoute] long id, [FromBody]AlertRequest request )
         {
-            var useCase = new UpdateRequestUseCase();
-            
             var result = await useCase.Execute(id, request);
             
             if (result == null)
@@ -66,10 +59,8 @@ namespace AquaAirAlert.Api.Controllers
         
         [HttpDelete]
         [Route("{id}")]
-        public async Task<IActionResult> Delete([FromRoute] long id)
+        public async Task<IActionResult> Delete([FromServices]IDeleteAlertUseCase useCase, [FromRoute] long id)
         {
-            var useCase = new DeleteAlertUseCase();
-            
             var result = await useCase.Delete(id);
     
             if  (result)

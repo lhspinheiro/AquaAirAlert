@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AquaAirAlert.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+292ec59cb0ac7f5060429810ffdaaf0eb53b5e35")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2573fd3aa85a9b9ae5cde4dd5dcc40198c52de24")]
 [assembly: System.Reflection.AssemblyProductAttribute("AquaAirAlert.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AquaAirAlert.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
