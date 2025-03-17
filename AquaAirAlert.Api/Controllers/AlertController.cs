@@ -1,31 +1,31 @@
-using System.Net;
 using AquaAirAlert.Application.UseCase.Delete;
 using AquaAirAlert.Application.UseCase.GetAllAlerts;
 using AquaAirAlert.Application.UseCase.RegisterAlerts;
 using AquaAirAlert.Application.UseCase.UpdateAlerts;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
-using AquaAirAlert.Infrastructure.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Api.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [Authorize]
     public class AlertController : ControllerBase
     {
         
         [HttpPost]
         [ProducesResponseType(typeof(ResponseAlert), StatusCodes.Status201Created)]
         [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
-
+       
         public async Task<IActionResult> Register([FromServices]IRegisterAlertsUSeCase useCase, [FromBody] AlertRequest request)
         {
             var response = await useCase.Execute(request);
             
             return Created(string.Empty, response);
         }
+        
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]

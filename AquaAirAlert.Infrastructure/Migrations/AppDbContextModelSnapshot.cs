@@ -19,9 +19,9 @@ namespace AquaAirAlert.Infrastructure.Migrations
 
             modelBuilder.Entity("AquaAirAlert.Infrastructure.Data.User", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<long>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -33,6 +33,9 @@ namespace AquaAirAlert.Infrastructure.Migrations
 
                     b.Property<string>("Password")
                         .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<Guid>("UserIdentifier")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
@@ -57,9 +60,25 @@ namespace AquaAirAlert.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
+                    b.Property<long>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("Id");
 
+                    b.HasIndex("UserId");
+
                     b.ToTable("Alerts");
+                });
+
+            modelBuilder.Entity("AquaAirAlert.Infrastructure.Data.alert", b =>
+                {
+                    b.HasOne("AquaAirAlert.Infrastructure.Data.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 #pragma warning restore 612, 618
         }

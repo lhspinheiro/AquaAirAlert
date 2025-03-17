@@ -600,3 +600,13 @@
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/obj/Debug/net8.0/AquaAirAlert.Api.pdb
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/obj/Debug/net8.0/AquaAirAlert.Api.genruntimeconfig.cache
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/obj/Debug/net8.0/ref/AquaAirAlert.Api.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.Bcl.Memory.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Abstractions.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Logging.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Tokens.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/System.IdentityModel.Tokens.Jwt.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

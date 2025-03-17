@@ -4,22 +4,29 @@ using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
+using AquaAirAlert.Infrastructure.Services.LoggedUser;
 using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.UpdateAlerts;
 
 public class UpdateRequestUseCase : IUpdateRequestUseCase
 {
-    
+    private readonly ILoggedUser _loggedUser;
+    public UpdateRequestUseCase(ILoggedUser  loggedUser)
+    {
+        _loggedUser = loggedUser;
+    }
     public async Task<ResponseAlert> Execute(long id, AlertRequest request)
     {
         var dbcontext = new AppDbContext();
         
         await Validate(request);
         
-        var entity = await dbcontext.Alerts.AsNoTracking().SingleOrDefaultAsync(i => i.Id.Equals(id));
+        var loggedUser = await _loggedUser.Get();
         
-        if (entity == null)
+        var entity = await dbcontext.Alerts.FirstOrDefaultAsync(alert => alert.Id == id && alert.UserId == loggedUser.Id);
+        
+        if (entity is null)
         {
             return null;
         }

@@ -3,6 +3,7 @@ using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
+using AquaAirAlert.Infrastructure.Security.Tokens;
 using FluentValidation.Results;
 using Microsoft.EntityFrameworkCore;
 
@@ -10,6 +11,13 @@ namespace AquaAirAlert.Application.UseCase.RegisterUser;
 
 public class RegisterUserUseCase : IRegisterUserUseCase
 {
+    private readonly IAcessTokenGenerator  _tokenGenerator;
+
+    public RegisterUserUseCase(IAcessTokenGenerator  tokenGenerator)
+    {
+        _tokenGenerator = tokenGenerator;
+    }
+    
     public async Task<ResponseUserRegistered> Execute(UserRequest request)
     {
         var dbcontext = new AppDbContext();
@@ -25,6 +33,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
             Password = encryptedPassword.HashPassword(request.Password),
         };
         
+        
         await dbcontext.Users.AddAsync(entity);
         await dbcontext.SaveChangesAsync();
 
@@ -32,6 +41,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         {
             Name = entity.Name,
             Email = entity.Email,
+            Token = _tokenGenerator.Generate(entity)
         };
 
     }

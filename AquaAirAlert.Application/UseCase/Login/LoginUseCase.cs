@@ -3,17 +3,25 @@ using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
+using AquaAirAlert.Infrastructure.Security.Tokens;
 using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.Login;
 
 public class LoginUseCase : ILoginUseCase
 {
+
+    private readonly IAcessTokenGenerator  _tokenGenerator;
+    public LoginUseCase(IAcessTokenGenerator tokenGenerator)
+    {
+        _tokenGenerator = tokenGenerator;
+    }
+    
     public async Task<ResponseSuccessLogin> Login(RequestLogin request)
     {
         var dbContext = new AppDbContext();
         
-        var entity = await dbContext.Users.FirstOrDefaultAsync(user => user.Email.Equals(request.Email));
+        var entity = await dbContext.Users.AsNoTracking().FirstOrDefaultAsync(user => user.Email.Equals(request.Email));
         if (entity is null)
             throw new InvalidLoginException();
 
@@ -22,10 +30,11 @@ public class LoginUseCase : ILoginUseCase
         
         if (passwordIsValid is false)
             throw new InvalidLoginException();
-
+        
         return new ResponseSuccessLogin
         {
-            Sucess = $"Login successful! {entity.Name} has been authenticated and logged in!"
+            Sucess = $"Login successful! {entity.Name} has been authenticated and logged in!",
+            Token = _tokenGenerator.Generate(entity)
         };
     }
 }

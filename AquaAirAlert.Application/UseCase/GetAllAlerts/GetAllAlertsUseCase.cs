@@ -22,6 +22,7 @@ public class GetAllAlertsUseCase : IGetAllAlertsUseCase
              Localizacao = r.Localizacao,
              Data=r.Data,
              Descricao = r.Descricao,
+             UserId = r.UserId
          }).ToListAsync(); 
          
         return response; 
