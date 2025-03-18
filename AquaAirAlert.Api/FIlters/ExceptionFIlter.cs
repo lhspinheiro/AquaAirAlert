@@ -19,7 +19,7 @@ public class ExceptionFIlter : IExceptionFilter
              }); 
          }
 
-         else
+        else
          {
              context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
              context.Result = new ObjectResult(new ResponseErrorMessagesJson

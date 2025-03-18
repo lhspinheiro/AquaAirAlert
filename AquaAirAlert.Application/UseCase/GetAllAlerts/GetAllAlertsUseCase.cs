@@ -24,7 +24,7 @@ public class GetAllAlertsUseCase : IGetAllAlertsUseCase
              Descricao = r.Descricao,
              UserId = r.UserId
          }).ToListAsync(); 
-         
+        
         return response; 
     }
 }

@@ -1,5 +1,7 @@
 using AquaAirAlert.Application.UseCase.Delete;
+using AquaAirAlert.Application.UseCase.GetAlertsByLocation;
 using AquaAirAlert.Application.UseCase.GetAllAlerts;
+using AquaAirAlert.Application.UseCase.GetMyAlerts;
 using AquaAirAlert.Application.UseCase.InterfacesRefit;
 using AquaAirAlert.Application.UseCase.Login;
 using AquaAirAlert.Application.UseCase.RegisterAlerts;
@@ -18,7 +20,6 @@ public static class DependencyInjection
     }
     private static void addUseCase(IServiceCollection services)
     {
-    
         services.AddScoped<IWeatherIntegration, WeatherIntegration>();
         services.AddScoped<IRegisterAlertsUSeCase, RegisterAlertsUSeCase>();
         services.AddScoped<IGetAllAlertsUseCase, GetAllAlertsUseCase>();
@@ -26,6 +27,7 @@ public static class DependencyInjection
         services.AddScoped<IUpdateRequestUseCase, UpdateRequestUseCase>();
         services.AddScoped<ILoginUseCase, LoginUseCase>();
         services.AddScoped<IRegisterUserUseCase, RegisterUserUseCase>();
-        
+        services.AddScoped<IGetByLocationUseCase, GetByLocationUseCase>();
+        services.AddScoped<IGetMyAlertsUseCase, GetMyAlertsUseCase>();
     }
 }

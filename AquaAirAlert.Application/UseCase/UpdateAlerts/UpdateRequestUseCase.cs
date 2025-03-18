@@ -43,7 +43,8 @@ public class UpdateRequestUseCase : IUpdateRequestUseCase
             Id = entity.Id,
             Localizacao = entity.Localizacao,
             Data = entity.Data,
-            Descricao = entity.Descricao
+            Descricao = entity.Descricao,
+            UserId = entity.UserId,
         };
     }
     

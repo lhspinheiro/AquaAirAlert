@@ -21,7 +21,9 @@ public class LoginUseCase : ILoginUseCase
     {
         var dbContext = new AppDbContext();
         
-        var entity = await dbContext.Users.AsNoTracking().FirstOrDefaultAsync(user => user.Email.Equals(request.Email));
+        
+        var entity = await dbContext.Users.AsNoTracking()
+            .FirstOrDefaultAsync(r => EF.Functions.Collate(r.Email, "NOCASE") == request.Email);
         if (entity is null)
             throw new InvalidLoginException();
 

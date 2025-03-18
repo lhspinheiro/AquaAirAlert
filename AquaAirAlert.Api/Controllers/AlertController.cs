@@ -1,5 +1,7 @@
 using AquaAirAlert.Application.UseCase.Delete;
+using AquaAirAlert.Application.UseCase.GetAlertsByLocation;
 using AquaAirAlert.Application.UseCase.GetAllAlerts;
+using AquaAirAlert.Application.UseCase.GetMyAlerts;
 using AquaAirAlert.Application.UseCase.RegisterAlerts;
 using AquaAirAlert.Application.UseCase.UpdateAlerts;
 using AquaAirAlert.Communication.Request;
@@ -40,6 +42,30 @@ namespace AquaAirAlert.Api.Controllers
             
             return NoContent();
 
+        }
+
+        [HttpGet("{location}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetByLocation([FromServices]IGetByLocationUseCase  useCase,[FromRoute] string location)
+        {
+            var response = await useCase.Execute(location);
+            
+            if  (response != null)
+                return Ok(response);
+            return NotFound();
+        }
+
+        [HttpGet("MyAlerts")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        public async Task<IActionResult> GetMyAlerts([FromServices] IGetMyAlertsUseCase useCase)
+        {
+            var response = await useCase.GetMyAlerts();
+            
+            if  (response != null)
+                return Ok(response);
+            return NotFound();
         }
         
         [HttpPut]
