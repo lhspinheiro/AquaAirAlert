@@ -649,6 +649,16 @@
         "build": {
           "buildTransitive/net8.0/System.Text.Json.targets": {}
         }
+      },
+      "AquaAirAlert.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AquaAirAlert.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AquaAirAlert.Domain.dll": {}
+        }
       }
     }
   },
@@ -1577,10 +1587,16 @@
         "system.text.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "AquaAirAlert.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AquaAirAlert.Domain/AquaAirAlert.Domain.csproj",
+      "msbuildProject": "../AquaAirAlert.Domain/AquaAirAlert.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "AquaAirAlert.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.2",
       "Microsoft.EntityFrameworkCore.Sqlite >= 9.0.2",
       "Microsoft.Extensions.Configuration.Binder >= 10.0.0-preview.1.25080.5",
@@ -1612,7 +1628,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/AquaAirAlert.Domain.csproj": {
+              "projectPath": "/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/AquaAirAlert.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,9 +1,9 @@
-using AquaAirAlert.Application.UseCase.Delete;
-using AquaAirAlert.Application.UseCase.GetAlertsByLocation;
-using AquaAirAlert.Application.UseCase.GetAllAlerts;
-using AquaAirAlert.Application.UseCase.GetMyAlerts;
-using AquaAirAlert.Application.UseCase.RegisterAlerts;
-using AquaAirAlert.Application.UseCase.UpdateAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.Delete;
+using AquaAirAlert.Application.UseCase.Alerts.GetAlertsByLocation;
+using AquaAirAlert.Application.UseCase.Alerts.GetAllAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.GetMyAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.RegisterAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.UpdateAlerts;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using Microsoft.AspNetCore.Authorization;

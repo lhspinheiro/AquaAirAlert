@@ -30,3 +30,5 @@
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/refint/AquaAirAlert.Communication.dll
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/AquaAirAlert.Communication.pdb
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/obj/Debug/net8.0/ref/AquaAirAlert.Communication.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Communication/bin/Debug/net8.0/AquaAirAlert.Domain.pdb

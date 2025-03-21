@@ -2957,8 +2957,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AquaAirAlert.Communication": "1.0.0",
+          "AquaAirAlert.Domain": "1.0.0",
           "AquaAirAlert.Exception": "1.0.0",
-          "AquaAirAlert.Infrastructure": "1.0.0",
           "BCrypt.Net-Next": "4.0.3",
           "FluentValidation": "12.0.0-preview1",
           "Refit": "8.0.0",
@@ -2984,6 +2984,16 @@
           "bin/placeholder/AquaAirAlert.Communication.dll": {}
         }
       },
+      "AquaAirAlert.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/AquaAirAlert.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AquaAirAlert.Domain.dll": {}
+        }
+      },
       "AquaAirAlert.Exception/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -2998,6 +3008,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AquaAirAlert.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.2",
           "Microsoft.Extensions.Configuration.Binder": "10.0.0-preview.1.25080.5",
@@ -8045,6 +8056,11 @@
       "type": "project",
       "path": "../AquaAirAlert.Communication/AquaAirAlert.Communication.csproj",
       "msbuildProject": "../AquaAirAlert.Communication/AquaAirAlert.Communication.csproj"
+    },
+    "AquaAirAlert.Domain/1.0.0": {
+      "type": "project",
+      "path": "../AquaAirAlert.Domain/AquaAirAlert.Domain.csproj",
+      "msbuildProject": "../AquaAirAlert.Domain/AquaAirAlert.Domain.csproj"
     },
     "AquaAirAlert.Exception/1.0.0": {
       "type": "project",

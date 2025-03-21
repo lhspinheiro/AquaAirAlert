@@ -2,7 +2,7 @@ using System.Text;
 using AquaAirAlert.Api.FIlters;
 using AquaAirAlert.Api.Token;
 using AquaAirAlert.Application;
-using AquaAirAlert.Application.UseCase.InterfacesRefit;
+using AquaAirAlert.Application.UseCase.Weather.WeatherRefit;
 using AquaAirAlert.Communication.KeyModel;
 using AquaAirAlert.Infrastructure;
 using AquaAirAlert.Infrastructure.Data;

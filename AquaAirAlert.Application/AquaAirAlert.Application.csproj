@@ -8,8 +8,8 @@
 
     <ItemGroup>
       <ProjectReference Include="..\AquaAirAlert.Communication\AquaAirAlert.Communication.csproj" />
+      <ProjectReference Include="..\AquaAirAlert.Domain\AquaAirAlert.Domain.csproj" />
       <ProjectReference Include="..\AquaAirAlert.Exception\AquaAirAlert.Exception.csproj" />
-      <ProjectReference Include="..\AquaAirAlert.Infrastructure\AquaAirAlert.Infrastructure.csproj" />
     </ItemGroup>
 
     <ItemGroup>
@@ -17,6 +17,12 @@
       <PackageReference Include="FluentValidation" Version="12.0.0-preview1" />
       <PackageReference Include="Refit" Version="8.0.0" />
       <PackageReference Include="Refit.HttpClientFactory" Version="8.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="UseCase\Alerts\" />
+      <Folder Include="UseCase\Users\" />
+      <Folder Include="UseCase\Weather\" />
     </ItemGroup>
 
 </Project>

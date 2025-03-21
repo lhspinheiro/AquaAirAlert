@@ -9,8 +9,8 @@
       "AquaAirAlert.Application/1.0.0": {
         "dependencies": {
           "AquaAirAlert.Communication": "1.0.0",
+          "AquaAirAlert.Domain": "1.0.0",
           "AquaAirAlert.Exception": "1.0.0",
-          "AquaAirAlert.Infrastructure": "1.0.0",
           "BCrypt.Net-Next": "4.0.3",
           "FluentValidation": "12.0.0-preview1",
           "Refit": "8.0.0",
@@ -585,6 +585,11 @@
           "AquaAirAlert.Communication.dll": {}
         }
       },
+      "AquaAirAlert.Domain/1.0.0": {
+        "runtime": {
+          "AquaAirAlert.Domain.dll": {}
+        }
+      },
       "AquaAirAlert.Exception/1.0.0": {
         "runtime": {
           "AquaAirAlert.Exception.dll": {}
@@ -592,6 +597,7 @@
       },
       "AquaAirAlert.Infrastructure/1.0.0": {
         "dependencies": {
+          "AquaAirAlert.Domain": "1.0.0",
           "Microsoft.EntityFrameworkCore": "9.0.2",
           "Microsoft.EntityFrameworkCore.Sqlite": "9.0.2",
           "Microsoft.Extensions.Configuration.Binder": "10.0.0-preview.1.25080.5",
@@ -905,6 +911,11 @@
       "hashPath": "system.text.json.9.0.3.nupkg.sha512"
     },
     "AquaAirAlert.Communication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AquaAirAlert.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

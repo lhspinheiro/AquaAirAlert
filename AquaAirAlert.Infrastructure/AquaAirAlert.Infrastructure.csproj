@@ -26,4 +26,8 @@
       <None Remove="Repository\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\AquaAirAlert.Domain\AquaAirAlert.Domain.csproj" />
+    </ItemGroup>
+
 </Project>

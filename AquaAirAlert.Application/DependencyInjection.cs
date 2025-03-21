@@ -1,13 +1,12 @@
-using AquaAirAlert.Application.UseCase.Delete;
-using AquaAirAlert.Application.UseCase.GetAlertsByLocation;
-using AquaAirAlert.Application.UseCase.GetAllAlerts;
-using AquaAirAlert.Application.UseCase.GetMyAlerts;
-using AquaAirAlert.Application.UseCase.InterfacesRefit;
-using AquaAirAlert.Application.UseCase.Login;
-using AquaAirAlert.Application.UseCase.RegisterAlerts;
-using AquaAirAlert.Application.UseCase.RegisterUser;
-using AquaAirAlert.Application.UseCase.UpdateAlerts;
-using AquaAirAlert.Application.UseCase.WeatherRefit;
+using AquaAirAlert.Application.UseCase.Alerts.Delete;
+using AquaAirAlert.Application.UseCase.Alerts.GetAlertsByLocation;
+using AquaAirAlert.Application.UseCase.Alerts.GetAllAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.GetMyAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.RegisterAlerts;
+using AquaAirAlert.Application.UseCase.Alerts.UpdateAlerts;
+using AquaAirAlert.Application.UseCase.Users.Login;
+using AquaAirAlert.Application.UseCase.Users.RegisterUser;
+using AquaAirAlert.Application.UseCase.Weather.WeatherRefit;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace AquaAirAlert.Application;

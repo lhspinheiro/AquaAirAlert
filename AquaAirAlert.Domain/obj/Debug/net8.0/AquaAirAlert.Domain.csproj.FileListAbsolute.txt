@@ -1,0 +1,12 @@
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/bin/Debug/net8.0/AquaAirAlert.Domain.deps.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/bin/Debug/net8.0/AquaAirAlert.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/bin/Debug/net8.0/AquaAirAlert.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.AssemblyInfoInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.AssemblyInfo.cs
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.csproj.CoreCompileInputs.cache
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.sourcelink.json
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/refint/AquaAirAlert.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/AquaAirAlert.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Domain/obj/Debug/net8.0/ref/AquaAirAlert.Domain.dll

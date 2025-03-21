@@ -1,4 +1,4 @@
-using AquaAirAlert.Application.UseCase.RegisterUser;
+using AquaAirAlert.Application.UseCase.Users.RegisterUser;
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
 using Microsoft.AspNetCore.Http;

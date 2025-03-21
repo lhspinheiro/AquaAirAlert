@@ -1,6 +1,7 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using AquaAirAlert.Domain.Security.Tokens;
 using AquaAirAlert.Infrastructure.Data;
 using Microsoft.IdentityModel.Tokens;
 

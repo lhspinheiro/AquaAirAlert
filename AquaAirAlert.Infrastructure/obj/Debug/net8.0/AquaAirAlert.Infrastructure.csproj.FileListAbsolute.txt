@@ -24,3 +24,6 @@
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/refint/AquaAirAlert.Infrastructure.dll
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.pdb
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/ref/AquaAirAlert.Infrastructure.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Domain.dll
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/bin/Debug/net8.0/AquaAirAlert.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Infrastructure/obj/Debug/net8.0/AquaAirAlert.Infrastructure.csproj.CopyComplete

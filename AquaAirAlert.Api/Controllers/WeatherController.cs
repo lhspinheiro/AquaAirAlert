@@ -1,4 +1,4 @@
-using AquaAirAlert.Application.UseCase.WeatherRefit;
+using AquaAirAlert.Application.UseCase.Weather.WeatherRefit;
 using AquaAirAlert.Communication.Response;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -22,6 +22,5 @@ namespace AquaAirAlert.Api.Controllers
            
            return Ok(result);
         }
-        
     }
 }

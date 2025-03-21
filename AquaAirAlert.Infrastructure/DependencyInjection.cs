@@ -1,3 +1,4 @@
+using AquaAirAlert.Domain.Security.Tokens;
 using AquaAirAlert.Infrastructure.Security.Tokens;
 using AquaAirAlert.Infrastructure.Services.LoggedUser;
 using Microsoft.Extensions.Configuration;
