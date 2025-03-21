@@ -12,19 +12,20 @@ namespace AquaAirAlert.Application.UseCase.UpdateAlerts;
 public class UpdateRequestUseCase : IUpdateRequestUseCase
 {
     private readonly ILoggedUser _loggedUser;
-    public UpdateRequestUseCase(ILoggedUser  loggedUser)
+    private readonly AppDbContext  _appDbContext;
+    public UpdateRequestUseCase(ILoggedUser  loggedUser, AppDbContext appDbContext)
     {
         _loggedUser = loggedUser;
+        _appDbContext = appDbContext;
     }
     public async Task<ResponseAlert> Execute(long id, AlertRequest request)
     {
-        var dbcontext = new AppDbContext();
         
         await Validate(request);
         
         var loggedUser = await _loggedUser.Get();
         
-        var entity = await dbcontext.Alerts.FirstOrDefaultAsync(alert => alert.Id == id && alert.UserId == loggedUser.Id);
+        var entity = await _appDbContext.Alerts.FirstOrDefaultAsync(alert => alert.Id == id && alert.UserId == loggedUser.Id);
         
         if (entity is null)
         {
@@ -35,8 +36,8 @@ public class UpdateRequestUseCase : IUpdateRequestUseCase
         entity.Data = request.Data;
         entity.Descricao = request.Descricao;
         
-        dbcontext.Alerts.Update(entity);
-        await dbcontext.SaveChangesAsync();
+        _appDbContext.Alerts.Update(entity);
+        await _appDbContext.SaveChangesAsync();
 
         return new ResponseAlert
         {

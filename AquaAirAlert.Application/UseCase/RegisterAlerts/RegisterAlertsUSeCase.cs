@@ -9,16 +9,16 @@ namespace AquaAirAlert.Application.UseCase.RegisterAlerts;
 public class RegisterAlertsUSeCase : IRegisterAlertsUSeCase
 {
     private readonly ILoggedUser _loggedUser;
+    private readonly AppDbContext  _dbContext;
 
-    public RegisterAlertsUSeCase(ILoggedUser  loggedUser)
+    public RegisterAlertsUSeCase(ILoggedUser  loggedUser, AppDbContext dbContext)
     {
         _loggedUser = loggedUser;
+        _dbContext = dbContext;
     }
     
     public async Task<ResponseAlert> Execute(AlertRequest request)
     {
-        var dbContext = new AppDbContext();
-        
         await Validate(request);
 
         var loggedUser = await _loggedUser.Get();
@@ -31,8 +31,8 @@ public class RegisterAlertsUSeCase : IRegisterAlertsUSeCase
             UserId = loggedUser.Id,
         };
         
-        await dbContext.Alerts.AddAsync(entity);
-        await dbContext.SaveChangesAsync();
+        await _dbContext.Alerts.AddAsync(entity);
+        await _dbContext.SaveChangesAsync();
         
         return new ResponseAlert
         {   

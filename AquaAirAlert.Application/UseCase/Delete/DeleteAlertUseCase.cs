@@ -7,27 +7,28 @@ namespace AquaAirAlert.Application.UseCase.Delete;
 public class DeleteAlertUseCase : IDeleteAlertUseCase
 {
     private readonly ILoggedUser _loggedUser;
+    private readonly AppDbContext  _appDbContext;
+    
 
-    public DeleteAlertUseCase(ILoggedUser  loggedUser)
+    public DeleteAlertUseCase(ILoggedUser  loggedUser, AppDbContext appDbContext)
     {
         _loggedUser = loggedUser;   
+        _appDbContext = appDbContext;
     }
     
     public async Task<bool> Delete(long id)
     {
-        var dbcontext = new AppDbContext();
-        
         var loggedUser = await _loggedUser.Get();
         
-        var entity = await dbcontext.Alerts.FirstOrDefaultAsync(alert => alert.Id == id && alert.UserId == loggedUser.Id);
+        var entity = await _appDbContext.Alerts.FirstOrDefaultAsync(alert => alert.Id == id && alert.UserId == loggedUser.Id);
 
         if (entity is null)
         {
             return false;
         }
         
-        dbcontext.Alerts.Remove(entity);
-        await dbcontext.SaveChangesAsync();  
+        _appDbContext.Alerts.Remove(entity);
+        await _appDbContext.SaveChangesAsync();  
         return true;
     }
 }

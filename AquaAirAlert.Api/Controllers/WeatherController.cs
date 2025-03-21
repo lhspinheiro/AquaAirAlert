@@ -1,5 +1,6 @@
 using AquaAirAlert.Application.UseCase.WeatherRefit;
 using AquaAirAlert.Communication.Response;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AquaAirAlert.Api.Controllers
@@ -10,6 +11,7 @@ namespace AquaAirAlert.Api.Controllers
     {
 
         [HttpGet]
+        [Authorize] 
         [Route("{city}")]
         public async Task<ActionResult<WeatherResponse>> Get([FromServices]IWeatherIntegration weatherIntegration  ,  [FromRoute]string city)
         {

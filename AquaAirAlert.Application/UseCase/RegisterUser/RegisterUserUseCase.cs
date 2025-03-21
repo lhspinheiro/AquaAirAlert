@@ -12,17 +12,17 @@ namespace AquaAirAlert.Application.UseCase.RegisterUser;
 public class RegisterUserUseCase : IRegisterUserUseCase
 {
     private readonly IAcessTokenGenerator  _tokenGenerator;
+    private readonly AppDbContext  _appDbContext;
 
-    public RegisterUserUseCase(IAcessTokenGenerator  tokenGenerator)
+    public RegisterUserUseCase(IAcessTokenGenerator  tokenGenerator, AppDbContext appDbContext)
     {
         _tokenGenerator = tokenGenerator;
+        _appDbContext = appDbContext;
     }
     
     public async Task<ResponseUserRegistered> Execute(UserRequest request)
     {
-        var dbcontext = new AppDbContext();
-        
-        await Validate(request, dbcontext);
+        await Validate(request, _appDbContext);
 
         var encryptedPassword = new BCryptAlgorithm();
 
@@ -34,8 +34,8 @@ public class RegisterUserUseCase : IRegisterUserUseCase
         };
         
         
-        await dbcontext.Users.AddAsync(entity);
-        await dbcontext.SaveChangesAsync();
+        await _appDbContext.Users.AddAsync(entity);
+        await _appDbContext.SaveChangesAsync();
 
         return new ResponseUserRegistered 
         {
@@ -46,7 +46,7 @@ public class RegisterUserUseCase : IRegisterUserUseCase
 
     }
     
-    private async Task Validate( UserRequest request    , AppDbContext dbcontext)
+    private async Task Validate( UserRequest request, AppDbContext dbcontext)
     {
         var validator = new RegisterValidator();
         var result = validator.Validate(request);

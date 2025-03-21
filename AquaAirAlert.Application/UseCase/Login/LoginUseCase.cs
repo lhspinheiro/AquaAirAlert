@@ -12,17 +12,17 @@ public class LoginUseCase : ILoginUseCase
 {
 
     private readonly IAcessTokenGenerator  _tokenGenerator;
-    public LoginUseCase(IAcessTokenGenerator tokenGenerator)
+    private readonly AppDbContext  _appDbContext;
+    public LoginUseCase(IAcessTokenGenerator tokenGenerator, AppDbContext appDbContext)
     {
         _tokenGenerator = tokenGenerator;
+        _appDbContext = appDbContext;
     }
     
     public async Task<ResponseSuccessLogin> Login(RequestLogin request)
     {
-        var dbContext = new AppDbContext();
         
-        
-        var entity = await dbContext.Users.AsNoTracking()
+        var entity = await _appDbContext.Users.AsNoTracking()
             .FirstOrDefaultAsync(r => EF.Functions.Collate(r.Email, "NOCASE") == request.Email);
         if (entity is null)
             throw new InvalidLoginException();
