@@ -5,7 +5,7 @@ Os usuários também podem registrar alertas de segurança relacionados a efeito
 
 Todas as informações são guardadas de forma segura em um banco de dados **SQLite** com  **EntityFramework** atuando como um ORM (Object-Relational-Mapper), simplificando e facilitando as interações com o banco de dados diretamente com objetos .NET  
 
-Ao se registrar, as senhas são criptografadas" e armazenadas de forma segura no banco de dados. Além disso, é gerado um **JWT Token** de autenticação e autorização de acesso nos endpoints. Com esse token, ele traz a segurança de apenas o usuário realizar edições e exclusões de suas prórprias publicações, impedindo que usuários não autorizados acessem publicações que não sejam de sua autoria. 
+Ao se registrar, as senhas são criptografadas e armazenadas de forma segura no banco de dados. Além disso, é gerado um **JWT Token** de autenticação e autorização de acesso nos endpoints. Com esse token, ele traz a segurança de apenas o usuário realizar edições e exclusões de suas prórprias publicações, impedindo que usuários não autorizados acessem publicações que não sejam de sua autoria. 
 
 A arquitetura da aplicação se baseaia-se em **REST**, utilizando métodos **HTTP**. O projeto conta com uma documentação **Swagger**,oferecendo uma interface gráfica interativa, que torna a exploração das funcionalidades simples e eficiente. 
 
