@@ -25,12 +25,12 @@ A arquitetura da aplicação se baseaia-se em **REST**, utilizando métodos **HT
     - **GET** /AirPollution/{lat}/{lon}
 
 - **/Alert**
-    - **POST** /AirPollution
-    - **GET** /AirPollution
-    - **GET** /AirPollution/{location}
-    - **GET** /AirPollution/MyAlerts
-    - **PUT** /AirPollution/{id}
-    - **DELETE** /AirPollution/{id}
+    - **POST** /Alert
+    - **GET** /Alert
+    - **GET** /Alert/{location}
+    - **GET** /Alert/MyAlerts
+    - **PUT** /Alert/{id}
+    - **DELETE** /Alert/{id}
 
 - **/Login**
     - **POST** /Login
