@@ -18,14 +18,13 @@ public class ExceptionFIlter : IExceptionFilter
                  Errors = alertsException.GetErrorMessages()
              }); 
          }
-
-        else
+         else
          {
              context.HttpContext.Response.StatusCode = StatusCodes.Status500InternalServerError;
              context.Result = new ObjectResult(new ResponseErrorMessagesJson
              {
                  Errors = ["Unknown error"]
              });
-         }
+         };
      } 
 } 

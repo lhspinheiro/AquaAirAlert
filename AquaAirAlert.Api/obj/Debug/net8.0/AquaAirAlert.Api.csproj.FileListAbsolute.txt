@@ -612,3 +612,4 @@
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/AquaAirAlert.Domain.dll
 /media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/AquaAirAlert.Domain.pdb
+/media/lhspinheiro/HD/Projetos/C# projects/AquaAirAlert/AquaAirAlert.Api/bin/Debug/net8.0/AutoMapper.dll

@@ -1,6 +1,4 @@
-using AquaAirAlert.Infrastructure.Data;
-
-namespace AquaAirAlert.Infrastructure.Security.Tokens;
+namespace AquaAirAlert.Domain.Security.Tokens;
 
 public interface ITokenProvider
 {

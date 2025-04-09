@@ -1,4 +1,6 @@
-namespace AquaAirAlert.Infrastructure.Data;
+using AquaAirAlert.Infrastructure.Data;
+
+namespace AquaAirAlert.Domain.Entities;
 
 public class alert
 {

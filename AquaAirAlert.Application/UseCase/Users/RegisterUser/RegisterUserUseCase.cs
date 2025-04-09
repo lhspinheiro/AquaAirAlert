@@ -4,6 +4,7 @@ using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Domain.Security.Tokens;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
+using AutoMapper;
 using FluentValidation.Results;
 using Microsoft.EntityFrameworkCore;
 
@@ -13,11 +14,13 @@ public class RegisterUserUseCase : IRegisterUserUseCase
 {
     private readonly IAcessTokenGenerator  _tokenGenerator;
     private readonly AppDbContext  _appDbContext;
+    private readonly IMapper _mapper;
 
-    public RegisterUserUseCase(IAcessTokenGenerator  tokenGenerator, AppDbContext appDbContext)
+    public RegisterUserUseCase(IAcessTokenGenerator  tokenGenerator, AppDbContext appDbContext, IMapper mapper)
     {
         _tokenGenerator = tokenGenerator;
         _appDbContext = appDbContext;
+        _mapper = mapper;
     }
     
     public async Task<ResponseUserRegistered> Execute(UserRequest request)
@@ -26,23 +29,13 @@ public class RegisterUserUseCase : IRegisterUserUseCase
 
         var encryptedPassword = new BCryptAlgorithm();
 
-        var entity = new User()
-        {
-            Name = request.Name,
-            Email = request.Email,
-            Password = encryptedPassword.HashPassword(request.Password),
-        };
-        
+        var entity = _mapper.Map<User>(request);
+        entity.Password = encryptedPassword.HashPassword(request.Password);
         
         await _appDbContext.Users.AddAsync(entity);
         await _appDbContext.SaveChangesAsync();
 
-        return new ResponseUserRegistered 
-        {
-            Name = entity.Name,
-            Email = entity.Email,
-            Token = _tokenGenerator.Generate(entity)
-        };
+        return _mapper.Map<ResponseUserRegistered>(entity);
 
     }
     

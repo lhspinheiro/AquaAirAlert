@@ -4,6 +4,7 @@ using AquaAirAlert.Api.Token;
 using AquaAirAlert.Application;
 using AquaAirAlert.Application.UseCase.Weather.WeatherRefit;
 using AquaAirAlert.Communication.KeyModel;
+using AquaAirAlert.Domain.Security.Tokens;
 using AquaAirAlert.Infrastructure;
 using AquaAirAlert.Infrastructure.Data;
 using AquaAirAlert.Infrastructure.Security.Tokens;

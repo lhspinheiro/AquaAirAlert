@@ -1,3 +1,4 @@
+using AquaAirAlert.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Infrastructure.Data;

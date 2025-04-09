@@ -4,6 +4,7 @@ using AquaAirAlert.Communication.Response;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
 using AquaAirAlert.Infrastructure.Services.LoggedUser;
+using AutoMapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace AquaAirAlert.Application.UseCase.Alerts.UpdateAlerts;
@@ -12,10 +13,12 @@ public class UpdateRequestUseCase : IUpdateRequestUseCase
 {
     private readonly ILoggedUser _loggedUser;
     private readonly AppDbContext  _appDbContext;
-    public UpdateRequestUseCase(ILoggedUser  loggedUser, AppDbContext appDbContext)
+    private readonly IMapper _mapper;
+    public UpdateRequestUseCase(ILoggedUser  loggedUser, AppDbContext appDbContext, IMapper mapper)
     {
         _loggedUser = loggedUser;
         _appDbContext = appDbContext;
+        _mapper = mapper;
     }
     public async Task<ResponseAlert> Execute(long id, AlertRequest request)
     {
@@ -31,21 +34,12 @@ public class UpdateRequestUseCase : IUpdateRequestUseCase
             return null;
         }
         
-        entity.Localizacao = request.Localizacao;
-        entity.Data = request.Data;
-        entity.Descricao = request.Descricao;
+        _mapper.Map(request, entity);
         
         _appDbContext.Alerts.Update(entity);
         await _appDbContext.SaveChangesAsync();
 
-        return new ResponseAlert
-        {
-            Id = entity.Id,
-            Localizacao = entity.Localizacao,
-            Data = entity.Data,
-            Descricao = entity.Descricao,
-            UserId = entity.UserId,
-        };
+        return _mapper.Map<ResponseAlert>(entity);
     }
     
     private async Task Validate(AlertRequest request)

@@ -1,3 +1,4 @@
+using AquaAirAlert.Application.AutoMapper;
 using AquaAirAlert.Application.UseCase.Alerts.Delete;
 using AquaAirAlert.Application.UseCase.Alerts.GetAlertsByLocation;
 using AquaAirAlert.Application.UseCase.Alerts.GetAllAlerts;
@@ -15,9 +16,16 @@ public static class DependencyInjection
 {
     public static void addApplcation(this IServiceCollection services)
     {
-        addUseCase(services);
+        AutoMapper(services);
+        AddUseCase(services);
     }
-    private static void addUseCase(IServiceCollection services)
+
+    private static void AutoMapper(IServiceCollection services)
+    {
+        services.AddAutoMapper(typeof(AutoMapping));
+    }
+
+    private static void AddUseCase(IServiceCollection services)
     {
         services.AddScoped<IWeatherIntegration, WeatherIntegration>();
         services.AddScoped<IRegisterAlertsUSeCase, RegisterAlertsUSeCase>();

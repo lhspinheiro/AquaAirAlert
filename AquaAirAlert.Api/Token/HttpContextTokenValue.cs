@@ -1,3 +1,4 @@
+using AquaAirAlert.Domain.Security.Tokens;
 using AquaAirAlert.Infrastructure.Security.Tokens;
 
 namespace AquaAirAlert.Api.Token;

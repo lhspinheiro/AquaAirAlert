@@ -1,8 +1,10 @@
 using AquaAirAlert.Communication.Request;
 using AquaAirAlert.Communication.Response;
+using AquaAirAlert.Domain.Entities;
 using AquaAirAlert.Exception;
 using AquaAirAlert.Infrastructure.Data;
 using AquaAirAlert.Infrastructure.Services.LoggedUser;
+using AutoMapper;
 
 namespace AquaAirAlert.Application.UseCase.Alerts.RegisterAlerts;
 
@@ -10,11 +12,14 @@ public class RegisterAlertsUSeCase : IRegisterAlertsUSeCase
 {
     private readonly ILoggedUser _loggedUser;
     private readonly AppDbContext  _dbContext;
+    private readonly IMapper _mapper;
+    
 
-    public RegisterAlertsUSeCase(ILoggedUser  loggedUser, AppDbContext dbContext)
+    public RegisterAlertsUSeCase(ILoggedUser  loggedUser, AppDbContext dbContext, IMapper mapper)
     {
         _loggedUser = loggedUser;
         _dbContext = dbContext;
+        _mapper = mapper;
     }
     
     public async Task<ResponseAlert> Execute(AlertRequest request)
@@ -23,25 +28,13 @@ public class RegisterAlertsUSeCase : IRegisterAlertsUSeCase
 
         var loggedUser = await _loggedUser.Get();
         
-        var entity = new alert()
-        {
-            Localizacao = request.Localizacao,
-            Data = request.Data,
-            Descricao = request.Descricao,
-            UserId = loggedUser.Id,
-        };
+        var entity = _mapper.Map<alert>(request);
+        entity.UserId = loggedUser.Id;
         
         await _dbContext.Alerts.AddAsync(entity);
         await _dbContext.SaveChangesAsync();
         
-        return new ResponseAlert
-        {   
-            Id = entity.Id,
-            Localizacao = entity.Localizacao,
-            Data = entity.Data,
-            Descricao = entity.Descricao,
-            UserId = entity.UserId
-        };
+        return _mapper.Map<ResponseAlert>(entity);
     }
     
     private async Task Validate(AlertRequest request)
